@@ -1,0 +1,46 @@
+.header{
+    background-color: $header-bg;
+    .navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        line-height: 2px;
+        
+
+        &_logo{
+            font-size: 30px;
+            color: white;
+        }
+        &_links{
+            @include tablet{
+                display: none;
+            }
+        }
+
+        &_search{
+            position: relative;
+            margin: 0 15px;
+           input{
+            background-color: #aaa;
+            border: none;
+            outline: none;
+            color: #fff;
+            border-radius: 4px;
+            padding: 8px 20px;
+           }
+
+           svg{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #eee;
+            }
+        }
+
+        &_rightLinks{
+            margin-left: auto;
+        }
+
+    }
+}

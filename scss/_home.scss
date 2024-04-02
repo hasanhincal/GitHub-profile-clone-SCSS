@@ -1,0 +1,164 @@
+.home{
+    max-width: 1024px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    &_about{
+        background-color: #fefefe;
+        padding-bottom: 5px;
+       &_title{
+       img{
+        width: 240px;
+        height: 240px;
+       }
+       h3{
+        margin-top: 20px;
+        font-weight: bolder;
+       }
+       h4{
+       color: #aaa;
+       line-height: 1.8; 
+       }
+        button{
+        width: 100%;
+        padding: 5px;
+        margin: 15px 0;
+        background-color: #ddd;
+        color: black;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: $transition;
+
+        &:hover{
+            background-color: crimson;
+            color: #fff;
+        }
+
+        }
+        }
+        &_dsc{
+            p{
+            line-height: 2;  
+            }
+            a{
+                color: #0b1dea;
+                padding-left: 0;
+                transition: $transition;
+                &:hover{
+                    @extend %hover_item;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &_projects{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 40px;
+        
+        &_links{
+            @extend %display-flex;
+            padding-bottom:10px ;
+            border-bottom: 1px solid gray;
+            
+            a{
+                color:#586069;
+                font-weight: bold;
+                padding: 5px 4px;
+                border-radius: 4px;
+                transition: $transition;
+                 
+                &:hover{
+                  @extend %hover_item;
+                  background-color: #bbb;
+                  color: #fff;
+                 } 
+                 
+              }
+        }
+
+        &_boxtitle{
+            margin-top: 30px;
+            @extend %display-flex;
+
+            @include tablet{
+                flex-direction: column;
+                margin-top: 10px;
+                line-height: 1.8;
+            }
+
+            a{
+                color:#586069;
+                font-weight: bold;
+                padding: 5px 4px;
+                border-radius: 4px;
+                transition: $transition;
+                 
+                &:hover{
+                  @extend %hover_item;
+                  background-color: #bbb;
+                  color: #fff;
+                 } 
+                 
+              }
+        }
+
+        .container{
+            @extend %display-flex;
+            flex-wrap: wrap;   
+        }
+        &_box{
+            width: 370px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid #000;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include tablet{
+                width: 90%;
+                
+            }
+
+            .up{
+               display: flex;
+
+               .right{
+               margin-left: auto;
+               }
+               a{
+                  color:#586069;
+                  font-weight: bolder;
+                   &:hover{
+                    @extend %hover_item;
+                   } 
+                   
+                }
+
+            }
+            
+            .down{
+             span{
+             background-color: #563d7c;
+             display: inline-block;
+             width: 12px;
+             height: 12px;
+             margin-right: 5px;
+             border-radius: 50%;
+
+             }
+            }
+            
+           }
+            
+        
+    }
+
+    
+}

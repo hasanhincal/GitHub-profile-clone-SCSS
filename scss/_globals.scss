@@ -1,0 +1,36 @@
+body{
+    font-family: $font-family;
+}
+%hover_item{
+    color: crimson;
+}
+
+%display-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    padding: 0 10px;
+    color: #fff;
+    transition: $transition;
+    &:hover{
+        @extend %hover_item;
+    }
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+
+
+
+
+
